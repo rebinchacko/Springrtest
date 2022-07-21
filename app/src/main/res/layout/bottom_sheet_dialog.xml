@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="share"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:id="@+id/lytfacebook"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/fbicon"
+                android:layout_height="match_parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lytwhtsapp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/whtappicon"
+                android:layout_height="match_parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lytinstagram"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/insta"
+                android:layout_height="match_parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytgoogle"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/googleicon"
+                android:layout_height="match_parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

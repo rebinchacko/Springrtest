@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.InnerNewsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="News"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/ivnews"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/error"
+            android:scaleType="fitXY"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/btsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Image"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvnewshead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/tveditor"
+                android:textColor="@color/black"
+                android:text="Billy Bambrough"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvdate"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:text="30 jun 2022"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvnewsdescription"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
